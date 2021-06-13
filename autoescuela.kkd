@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrama nombreProyecto="EscuelaConductores" formula="%t_%c" version="8" nombreAutor="user">
+  <DataBase>2</DataBase>
+  <lista-item>
+    <item id="{abb1a198-dcea-45c1-8e44-df7107932e38}" type="modelo-tabla">
+      <nombre>SUCURSAL</nombre>
+      <posicion>
+        <x>-435</x>
+        <y>-182</y>
+      </posicion>
+      <lista-columnas>
+        <columna id="{891826f3-7eb7-4eb3-a550-a454a25a7f96}" nombre="id" tipoDato="INTEGER" llaveprimaria="1" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{f90baa5b-b1e7-4d1d-b651-67d71f66694f}" nombre="nombre" tipoDato="VARCHAR(100)" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{560687a8-688d-401b-9298-78dafd1b400c}" nombre="domicilio" tipoDato="VARCHAR(500)" llaveprimaria="0" nulo="1" notas="" llaveUnica=""/>
+      </lista-columnas>
+    </item>
+    <item id="{bde905d2-2a42-4bb8-8246-f7eb39e31e48}" type="modelo-tabla">
+      <nombre>EMPLEADO</nombre>
+      <posicion>
+        <x>-48</x>
+        <y>-213</y>
+      </posicion>
+      <lista-columnas>
+        <columna id="{8a1b2c89-0f0f-42d8-aa40-5c0966f45e52}" nombre="id" tipoDato="INTEGER" llaveprimaria="1" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{e884a824-1dfc-4cb8-b3d0-04d506650b94}" nombre="nombre" tipoDato="VARCHAR(100)" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{025cf6eb-a861-41f8-a1ec-85ef49cfda95}" nombre="apellido" tipoDato="VARCHAR(100)" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{3ec96b8e-44b7-4f86-9506-6ff0c719c2a5}" nombre="dni" tipoDato="VARCHAR(10)" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{76acbc13-27a5-4494-84d0-983e01a5859b}" nombre="telefono" tipoDato="VARCHAR(14)" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{bf63c31e-45d2-4b11-80bd-2d9cbcd34fca}" nombre="fecha_caducidad_carnet" tipoDato="DATE" llaveprimaria="0" nulo="1" notas="" llaveUnica=""/>
+      </lista-columnas>
+    </item>
+    <item id="{51a1f3d6-2107-4011-bf10-f2486470d7c5}" type="modelo-tabla">
+      <nombre>CIUDAD</nombre>
+      <posicion>
+        <x>-421</x>
+        <y>-11</y>
+      </posicion>
+      <lista-columnas>
+        <columna id="{094eaea9-4c0a-4d8f-80a5-dbebab1e6edf}" nombre="id" tipoDato="INTEGER" llaveprimaria="1" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{78e3c329-8b47-4cf1-bdeb-efacb2bce952}" nombre="nombre" tipoDato="varchar(100)" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+      </lista-columnas>
+    </item>
+    <item id="{9a05c244-4b22-4816-97a9-8f9be2687e40}" type="modelo-tabla">
+      <nombre>PROVINCIA</nombre>
+      <posicion>
+        <x>-421</x>
+        <y>134</y>
+      </posicion>
+      <lista-columnas>
+        <columna id="{fa370fc1-0859-4ca6-a0cc-b3fcb14611ff}" nombre="id" tipoDato="integer" llaveprimaria="1" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{545e1720-bcc3-48c4-882c-940fe9d9f502}" nombre="nombre" tipoDato="" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+      </lista-columnas>
+    </item>
+    <item id="{697ce9db-6938-4789-860f-2c6e58b28a6e}" type="modelo-tabla">
+      <nombre>PAIS</nombre>
+      <posicion>
+        <x>-57</x>
+        <y>127</y>
+      </posicion>
+      <lista-columnas>
+        <columna id="{919103b5-4f29-4df2-9400-9f941afc9ee9}" nombre="id" tipoDato="integer" llaveprimaria="1" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{2c8a2d0d-6493-43ab-8b7b-e07af7f3a841}" nombre="nombre" tipoDato="varchar(100)" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{8bc1c129-8181-4c57-a8b7-d13c42bf9a39}" nombre="nacionalidad" tipoDato="varchar(100)" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+      </lista-columnas>
+    </item>
+    <item id="{c132a916-d5d7-447a-bebb-756315320823}" type="modelo-tabla">
+      <nombre>CARGO</nombre>
+      <posicion>
+        <x>184</x>
+        <y>-196</y>
+      </posicion>
+      <lista-columnas>
+        <columna id="{f68a3eaa-2eef-4a27-a869-9c6ede6fc0f7}" nombre="id" tipoDato="INTEGER" llaveprimaria="1" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{643c2918-ed28-4ba7-b670-3e26e32cf323}" nombre="nombre" tipoDato="varchar(100)" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+      </lista-columnas>
+    </item>
+    <item id="{9df927d1-7ca5-43b4-a59a-a688523cccd3}" type="modelo-tabla">
+      <nombre>CLIENTE</nombre>
+      <posicion>
+        <x>-740</x>
+        <y>-674</y>
+      </posicion>
+      <lista-columnas>
+        <columna id="{bc7ec778-2998-4678-905d-c6eb9cd77ab0}" nombre="id" tipoDato="INTEGER" llaveprimaria="1" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{96eb8b55-751c-45b1-8268-88c6e60f7a9a}" nombre="nombre" tipoDato="VARCHAR(100)" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{1e8852fc-90af-4294-b02c-9f7a9704856b}" nombre="telefono" tipoDato="VARCHAR(14)" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+      </lista-columnas>
+    </item>
+    <item id="{c87c9d85-de76-4e44-9b71-dfc05ce47add}" type="modelo-tabla">
+      <nombre>SOLICITUD</nombre>
+      <posicion>
+        <x>-524</x>
+        <y>-665</y>
+      </posicion>
+      <lista-columnas>
+        <columna id="{56f63c7e-8986-4c14-b65e-1134232a7ed4}" nombre="id" tipoDato="INTEGER" llaveprimaria="1" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{2fd93dc1-9444-4546-9e32-3cb60db21d98}" nombre="fecha" tipoDato="" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+      </lista-columnas>
+    </item>
+    <item id="{2dfca2e5-5c07-49f3-a4f5-6c46d9e78f55}" type="modelo-tabla">
+      <nombre>CURSO</nombre>
+      <posicion>
+        <x>-65</x>
+        <y>-651</y>
+      </posicion>
+      <lista-columnas>
+        <columna id="{db511c78-2b0d-47fe-a565-f2dc12160a26}" nombre="id" tipoDato="INTEGER" llaveprimaria="1" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{9ed9a74c-55e3-48be-b8d2-eee01e804598}" nombre="fecha_inicio" tipoDato="DATE" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{8f9f661a-2a40-48e6-ada2-1544b3e4b707}" nombre="esta_pagado" tipoDato="BIT" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{cd395527-8aff-497e-89c9-dc44bea84cbd}" nombre="esta_aprobado" tipoDato="" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+      </lista-columnas>
+    </item>
+    <item id="{427ab5c2-2f1b-437e-a73b-e651304e3539}" type="modelo-tabla">
+      <nombre>TIPO_CURSO</nombre>
+      <posicion>
+        <x>165</x>
+        <y>-604</y>
+      </posicion>
+      <lista-columnas>
+        <columna id="{0f152160-3c7c-4a41-8bbc-d10d26d7f396}" nombre="id" tipoDato="INTEGER" llaveprimaria="1" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{e227a1d1-2864-4063-8c7b-de70536eb1bc}" nombre="nombre" tipoDato="varchar(100)" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{36a3c88f-49cb-47c8-8910-ff8c2af703a5}" nombre="cantidad_clases" tipoDato="TINYINT" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{981900d1-a36c-4a31-a9fc-25b5d1a8448d}" nombre="habilita_examen" tipoDato="BIT" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{56372718-b414-47ff-a17a-b78050895d70}" nombre="cantidad_intentos_examen" tipoDato="TINYINT" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{ec167fe9-a9f1-45f1-b496-92cd135949f7}" nombre="costo" tipoDato="DECIMAL(10,2)" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+      </lista-columnas>
+    </item>
+    <item id="{6ac77d0b-e33c-416f-89bc-3fd4579ffaaf}" type="modelo-tabla">
+      <nombre>CLASE</nombre>
+      <posicion>
+        <x>-257</x>
+        <y>-486</y>
+      </posicion>
+      <lista-columnas>
+        <columna id="{2bebd6fa-0122-4013-890d-ee1ebb2b84a8}" nombre="id" tipoDato="INTEGER" llaveprimaria="1" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{576f1bac-268c-41bf-a8e0-7b244c288df3}" nombre="horario_inicio" tipoDato="DATETIME" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{bee276ef-8f5c-4470-862d-757c8d769dd5}" nombre="horario_fin" tipoDato="" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+      </lista-columnas>
+    </item>
+    <item id="{cb6d3f69-c913-42ea-94bd-1eb1cd556e7c}" type="modelo-tabla">
+      <nombre>AUTO</nombre>
+      <posicion>
+        <x>-305</x>
+        <y>-329</y>
+      </posicion>
+      <lista-columnas>
+        <columna id="{b5d5e6f9-4d06-4852-86e3-774a28af525f}" nombre="id" tipoDato="INTEGER" llaveprimaria="1" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{aaad9cc3-3f66-4514-be21-7fc32535534d}" nombre="nombre" tipoDato="varchar(50)" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{47bea3e5-f6d4-45d9-978d-c6698944ea5c}" nombre="patente" tipoDato="varchar(10)" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{1fa8f2b7-7bfc-49b3-b7b0-5a52bfeccb6c}" nombre="titular" tipoDato="varchar(100)" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{a029d631-28a9-4dac-803c-d08fe6ffb59a}" nombre="kilometraje" tipoDato="BIGINT" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+      </lista-columnas>
+    </item>
+    <item id="{575f791b-a1ad-4794-8e83-f71398bcb158}" type="modelo-tabla">
+      <nombre>EXAMEN</nombre>
+      <posicion>
+        <x>69</x>
+        <y>-423</y>
+      </posicion>
+      <lista-columnas>
+        <columna id="{c9f8b8c1-41b6-4619-abcb-5428ef50c7ea}" nombre="id" tipoDato="INTEGER" llaveprimaria="1" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{79548aee-83a2-44be-9853-96b1904b5c7e}" nombre="horario" tipoDato="DATETIME" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{ecb0de85-d82f-4a7a-89cc-af6be985fd40}" nombre="nro_intento" tipoDato="TINYINT" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{c5e37dfc-5200-4b8b-b3db-ea5b730e5616}" nombre="esta_aprobado" tipoDato="BIT" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{98c16811-5a04-4fdc-a869-260cd9c6f70e}" nombre="motivo_desaprobado" tipoDato="VARCHAR(500)" llaveprimaria="0" nulo="1" notas="" llaveUnica=""/>
+        <columna id="{5ba4d296-7d44-48de-bb21-c5ebae1ca927}" nombre="puntaje" tipoDato="TINYINT" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+      </lista-columnas>
+    </item>
+    <item id="{9ed8c4e4-d9e4-4617-86f7-2fced5e366fa}" type="modelo-tabla">
+      <nombre>COMENTARIO</nombre>
+      <posicion>
+        <x>-420</x>
+        <y>-542</y>
+      </posicion>
+      <lista-columnas>
+        <columna id="{ef4f4e75-eb94-4556-aea8-01af63cda1f2}" nombre="id" tipoDato="INTEGER" llaveprimaria="1" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{06c7fd0e-3937-4277-ad25-3a8b8c2af7fe}" nombre="puntaje" tipoDato="TINYINT" llaveprimaria="0" nulo="0" notas="" llaveUnica=""/>
+        <columna id="{5b6f2f95-7a6d-4e3f-b11e-b368689f0080}" nombre="comentario" tipoDato="VARCHAR(500)" llaveprimaria="0" nulo="1" notas="" llaveUnica=""/>
+      </lista-columnas>
+    </item>
+    <item id="{dcb252fd-6663-4040-8582-cf865ceef3e5}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>-348.219</x>
+          <y>-136.792</y>
+        </posicion>
+        <angulo>0</angulo>
+        <label>es supervisada</label>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Puede</cardinalidadLinea>
+        <owner>{abb1a198-dcea-45c1-8e44-df7107932e38}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>-48</x>
+          <y>-176.396</y>
+        </posicion>
+        <angulo>180</angulo>
+        <label>supervisa</label>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{bde905d2-2a42-4bb8-8246-f7eb39e31e48}</owner>
+      </final>
+    </item>
+    <item id="{22baaad3-42e5-47ab-b5ac-81d2dfbc1cbc}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>-391.609</x>
+          <y>-114.188</y>
+        </posicion>
+        <angulo>270</angulo>
+        <label>ubicada</label>
+        <cardinalidad>Muchos</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{abb1a198-dcea-45c1-8e44-df7107932e38}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>-381.281</x>
+          <y>-11</y>
+        </posicion>
+        <angulo>90</angulo>
+        <label>contiene</label>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Puede</cardinalidadLinea>
+        <owner>{51a1f3d6-2107-4011-bf10-f2486470d7c5}</owner>
+      </final>
+    </item>
+    <item id="{00784f12-95d0-49f0-b480-087c2af03e7e}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>-381.281</x>
+          <y>42.8125</y>
+        </posicion>
+        <angulo>270</angulo>
+        <label>ubicada</label>
+        <cardinalidad>Muchos</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{51a1f3d6-2107-4011-bf10-f2486470d7c5}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>-380.469</x>
+          <y>134</y>
+        </posicion>
+        <angulo>90</angulo>
+        <label>contiene</label>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Puede</cardinalidadLinea>
+        <owner>{9a05c244-4b22-4816-97a9-8f9be2687e40}</owner>
+      </final>
+    </item>
+    <item id="{fa0d83c7-3258-4688-8b6f-9f63d8c79bab}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>-339.938</x>
+          <y>160.906</y>
+        </posicion>
+        <angulo>0</angulo>
+        <label>ubicada</label>
+        <cardinalidad>Muchos</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{9a05c244-4b22-4816-97a9-8f9be2687e40}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>-57</x>
+          <y>160.906</y>
+        </posicion>
+        <angulo>180</angulo>
+        <label>contiene</label>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Puede</cardinalidadLinea>
+        <owner>{697ce9db-6938-4789-860f-2c6e58b28a6e}</owner>
+      </final>
+    </item>
+    <item id="{114d951e-64d4-4b0d-9e8f-9602c15e9a1c}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>41.1016</x>
+          <y>-103.188</y>
+        </posicion>
+        <angulo>270</angulo>
+        <label>es de</label>
+        <cardinalidad>Muchos</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{bde905d2-2a42-4bb8-8246-f7eb39e31e48}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>-2.36719</x>
+          <y>127</y>
+        </posicion>
+        <angulo>90</angulo>
+        <label>es origen de </label>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Puede</cardinalidadLinea>
+        <owner>{697ce9db-6938-4789-860f-2c6e58b28a6e}</owner>
+      </final>
+    </item>
+    <item id="{728a62e2-9466-4fc3-a37a-ce39fe286ee3}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>130.203</x>
+          <y>-158.094</y>
+        </posicion>
+        <angulo>0</angulo>
+        <cardinalidad>Muchos</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{bde905d2-2a42-4bb8-8246-f7eb39e31e48}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>184</x>
+          <y>-169.094</y>
+        </posicion>
+        <angulo>180</angulo>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Puede</cardinalidadLinea>
+        <owner>{c132a916-d5d7-447a-bebb-756315320823}</owner>
+      </final>
+    </item>
+    <item id="{cbac1067-aeb4-4635-be86-337aba811fcc}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>-348.219</x>
+          <y>-159.396</y>
+        </posicion>
+        <angulo>0</angulo>
+        <label>emplea a</label>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{abb1a198-dcea-45c1-8e44-df7107932e38}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>-48</x>
+          <y>-139.792</y>
+        </posicion>
+        <angulo>180</angulo>
+        <label>trabaja en </label>
+        <cardinalidad>Muchos</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{bde905d2-2a42-4bb8-8246-f7eb39e31e48}</owner>
+      </final>
+    </item>
+    <item id="{d7721299-9984-4e45-ae0f-067f1a86ae6a}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>-484.125</x>
+          <y>-611.188</y>
+        </posicion>
+        <angulo>270</angulo>
+        <label>registrada en</label>
+        <cardinalidad>Muchos</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{c87c9d85-de76-4e44-9b71-dfc05ce47add}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>-406.073</x>
+          <y>-182</y>
+        </posicion>
+        <angulo>90</angulo>
+        <label>registra</label>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Puede</cardinalidadLinea>
+        <owner>{abb1a198-dcea-45c1-8e44-df7107932e38}</owner>
+      </final>
+    </item>
+    <item id="{db3b64a7-2aca-4b8f-99cf-2779dbfcd875}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>-657.828</x>
+          <y>-640.094</y>
+        </posicion>
+        <angulo>0</angulo>
+        <label>solicitar</label>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{9df927d1-7ca5-43b4-a59a-a688523cccd3}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>-524</x>
+          <y>-638.094</y>
+        </posicion>
+        <angulo>180</angulo>
+        <label>solicitada por</label>
+        <cardinalidad>Muchos</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{c87c9d85-de76-4e44-9b71-dfc05ce47add}</owner>
+      </final>
+    </item>
+    <item id="{9c512ce3-7abf-47a0-a766-6d3dbbcd5706}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>-444.25</x>
+          <y>-638.094</y>
+        </posicion>
+        <angulo>0</angulo>
+        <label>solicita</label>
+        <cardinalidad>Muchos</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{c87c9d85-de76-4e44-9b71-dfc05ce47add}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>-65</x>
+          <y>-610.094</y>
+        </posicion>
+        <angulo>180</angulo>
+        <label>solicitado por</label>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{2dfca2e5-5c07-49f3-a4f5-6c46d9e78f55}</owner>
+      </final>
+    </item>
+    <item id="{f7492bca-00c3-4df1-9f3b-72fafafd6d90}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>-4.15625</x>
+          <y>-569.188</y>
+        </posicion>
+        <angulo>270</angulo>
+        <label>enseñado por</label>
+        <cardinalidad>Muchos</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{2dfca2e5-5c07-49f3-a4f5-6c46d9e78f55}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>41.1016</x>
+          <y>-213</y>
+        </posicion>
+        <angulo>90</angulo>
+        <label>enseñar</label>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Puede</cardinalidadLinea>
+        <owner>{bde905d2-2a42-4bb8-8246-f7eb39e31e48}</owner>
+      </final>
+    </item>
+    <item id="{7c3bafe2-53a8-4499-aebf-ecee52495b7c}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>165</x>
+          <y>-549.094</y>
+        </posicion>
+        <angulo>180</angulo>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Puede</cardinalidadLinea>
+        <owner>{427ab5c2-2f1b-437e-a73b-e651304e3539}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>56.6875</x>
+          <y>-610.094</y>
+        </posicion>
+        <angulo>0</angulo>
+        <cardinalidad>Muchos</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{2dfca2e5-5c07-49f3-a4f5-6c46d9e78f55}</owner>
+      </final>
+    </item>
+    <item id="{f876886a-adc7-42bd-92d7-9b70368a5aa3}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>-200.406</x>
+          <y>-486</y>
+        </posicion>
+        <angulo>90</angulo>
+        <label>pertenece a</label>
+        <cardinalidad>Muchos</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{6ac77d0b-e33c-416f-89bc-3fd4579ffaaf}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>-34.5781</x>
+          <y>-569.188</y>
+        </posicion>
+        <angulo>270</angulo>
+        <label>incluye</label>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{2dfca2e5-5c07-49f3-a4f5-6c46d9e78f55}</owner>
+      </final>
+    </item>
+    <item id="{9e1e40bd-d5b3-443f-bc5e-cfe21418e94d}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>-254.711</x>
+          <y>-233.188</y>
+        </posicion>
+        <angulo>270</angulo>
+        <label>pertenece a</label>
+        <cardinalidad>Muchos</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{cb6d3f69-c913-42ea-94bd-1eb1cd556e7c}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>-377.146</x>
+          <y>-182</y>
+        </posicion>
+        <angulo>90</angulo>
+        <label>dispone de</label>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{abb1a198-dcea-45c1-8e44-df7107932e38}</owner>
+      </final>
+    </item>
+    <item id="{140453a5-9a5c-4e15-a8fd-c9ce99605f4e}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>-200.406</x>
+          <y>-418.188</y>
+        </posicion>
+        <angulo>270</angulo>
+        <label>incluye</label>
+        <cardinalidad>Muchos</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{6ac77d0b-e33c-416f-89bc-3fd4579ffaaf}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>-254.711</x>
+          <y>-329</y>
+        </posicion>
+        <angulo>90</angulo>
+        <label>asignado a </label>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Puede</cardinalidadLinea>
+        <owner>{cb6d3f69-c913-42ea-94bd-1eb1cd556e7c}</owner>
+      </final>
+    </item>
+    <item id="{905a2efb-7b68-4366-b263-9962e1f31748}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>26.2656</x>
+          <y>-569.188</y>
+        </posicion>
+        <angulo>270</angulo>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Puede</cardinalidadLinea>
+        <owner>{2dfca2e5-5c07-49f3-a4f5-6c46d9e78f55}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>148.359</x>
+          <y>-423</y>
+        </posicion>
+        <angulo>90</angulo>
+        <cardinalidad>Muchos</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{575f791b-a1ad-4794-8e83-f71398bcb158}</owner>
+      </final>
+    </item>
+    <item id="{c066707c-e8d7-4e4f-8c3d-5dcab3c0e87d}" type="modelo-relacion">
+      <inicio>
+        <posicion>
+          <x>-318.875</x>
+          <y>-508.094</y>
+        </posicion>
+        <angulo>0</angulo>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{9ed8c4e4-d9e4-4617-86f7-2fced5e366fa}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>-257</x>
+          <y>-452.094</y>
+        </posicion>
+        <angulo>180</angulo>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Puede</cardinalidadLinea>
+        <owner>{6ac77d0b-e33c-416f-89bc-3fd4579ffaaf}</owner>
+      </final>
+    </item>
+  </lista-item>
+</diagrama>

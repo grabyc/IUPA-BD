@@ -229,9 +229,9 @@ INSERT INTO `CURSO` (`id`, `fecha_inicio`, `esta_pagado`, `esta_aprobado`, `empl
 INSERT INTO `CURSO` (`id`, `fecha_inicio`, `esta_pagado`, `esta_aprobado`, `empleado_id`, `tipo_curso_id`) VALUES (2, '2020-11-01', 1, null, 1, 1);
 INSERT INTO `CURSO` (`id`, `fecha_inicio`, `esta_pagado`, `esta_aprobado`, `empleado_id`, `tipo_curso_id`) VALUES (3, '2020-11-03', 1, null, 1, 1);
 INSERT INTO `CURSO` (`id`, `fecha_inicio`, `esta_pagado`, `esta_aprobado`, `empleado_id`, `tipo_curso_id`) VALUES (4, '2021-07-01', 0, null, 2, 3);
-INSERT INTO `CURSO` (`id`, `fecha_inicio`, `esta_pagado`, `esta_aprobado`, `empleado_id`, `tipo_curso_id`) VALUES (5, '2021-05-26', 1, null, 3, 3);
-INSERT INTO `CURSO` (`id`, `fecha_inicio`, `esta_pagado`, `esta_aprobado`, `empleado_id`, `tipo_curso_id`) VALUES (6, '2021-06-30', 0, null, 3, 1);
-INSERT INTO `CURSO` (`id`, `fecha_inicio`, `esta_pagado`, `esta_aprobado`, `empleado_id`, `tipo_curso_id`) VALUES (7, '2021-03-15', 1, 0, 4, 2);
+INSERT INTO `CURSO` (`id`, `fecha_inicio`, `esta_pagado`, `esta_aprobado`, `empleado_id`, `tipo_curso_id`) VALUES (5, '2021-05-26', 1, null, 4, 3);
+INSERT INTO `CURSO` (`id`, `fecha_inicio`, `esta_pagado`, `esta_aprobado`, `empleado_id`, `tipo_curso_id`) VALUES (6, '2021-06-30', 0, null, 4, 1);
+INSERT INTO `CURSO` (`id`, `fecha_inicio`, `esta_pagado`, `esta_aprobado`, `empleado_id`, `tipo_curso_id`) VALUES (7, '2021-03-15', 1, 0, 5, 2);
 
 --
 -- Volcado de datos para la tabla `TIPO_CURSO`

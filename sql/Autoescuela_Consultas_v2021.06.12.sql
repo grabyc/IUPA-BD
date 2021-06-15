@@ -57,8 +57,7 @@ FROM CLIENTE c
 ORDER BY c.id, pc.prox_clase;    
 
 --
--- 4) Contacto de los alumnos para llamarlos y recordarles el turno de su próxima clase 
---      (para este ejercicio, se llamará a los que tengan una clase dentro de los próximos 30 días)
+-- 4) Contacto de los alumnos para llamarlos y gestionar el cobro de curso solicitado 
 
 SELECT 
 	c.nombre as Cliente,

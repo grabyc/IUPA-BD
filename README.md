@@ -6,6 +6,8 @@ Para ello se diseñará y creará una base de datos que refleje los requerimient
 
 ## Problema
 
+---
+
 Se plantea el siguiente problema a modelar:
 
 > **Escuela de Conductores**
@@ -34,6 +36,8 @@ Se plantea el siguiente problema a modelar:
 
 ## Consigna
 
+---
+
 1. Diseñar y construir una base de datos para el problema **Escuela de Conductores**
 2. La base de datos debe contener al menos:
    - 4 tablas, todas relacionadas entre sí
@@ -55,6 +59,8 @@ Se plantea el siguiente problema a modelar:
    - Una captura de pantalla del resultado obtenido
 
 ## Entrega final
+
+---
 
 1. Modelo de datos y carga inicial de datos
 

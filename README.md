@@ -62,7 +62,7 @@ Se plantea el siguiente problema a modelar:
 
 ---
 
-1. Modelo de datos y carga inicial de datos
+### Modelo de datos y carga inicial de datos
 
 <div align="center">
     <img src="./imgs/Autoescuela_-_Diagrama_ER_v2021.06.12.png" width="500">
@@ -74,17 +74,23 @@ El modelo de datos propuesto se encuentra en el siguiente archivo:
 
 La carga inicial de datos se realizará mediante sentencias INSERT incluidas en el archivo mencionado.
 
-2. Altas, bajas y modificaciones de registros
+---
+
+### Altas, bajas y modificaciones de registros
 
 Las operaciones DML se encuentran en el siguiente archivo:
 
 - [Autoescuela_DML_v2021.06.12.sql](./sql/Autoescuela_DML_v2021.06.12.sql)
 
-3. Consultas de datos varios
+---
+
+### Consultas de datos varios
 
 Las operaciones de consulta se encuentran en el siguiente archivo:
 
 - [Autoescuela_Consultas_v2021.06.12.sql](./sql/Autoescuela_Consultas_v2021.06.12.sql)
+
+A continuación se presentan las consultas realizadas y sus resultados
 
 1. Dirección de todas las sucursales y nombre y teléfono del supervisor
 
@@ -104,6 +110,8 @@ WHERE e.es_supervisor = 1;
 <div align="center">
     <img src="./imgs/01_resultados.png">
 </div>
+
+---
 
 2. Detalle de los instructores cuyo carnet de conducir está próximo a vencerse (para este ejercicio, se toma _"próximo"_ como _"en menos de un año"_)
 
@@ -130,6 +138,8 @@ WHERE c.nombre LIKE '%Instructor%' AND
     <img src="./imgs/02_resultados.png">
 </div>
 
+---
+
 3. Contacto de los alumnos para llamarlos y recordarles el turno de su próxima clase (para este ejercicio, se llamará a los que tengan una clase dentro de los próximos 30 días)
 
 ```sql
@@ -153,6 +163,8 @@ ORDER BY c.id, pc.prox_clase;
     <img src="./imgs/03_resultados.png">
 </div>
 
+---
+
 4.  Contacto de los alumnos para llamarlos y gestionar el cobro de curso solicitado
 
 ```sql
@@ -172,6 +184,8 @@ WHERE cu.esta_pagado = 0;
     <img src="./imgs/04_resultados.png">
 </div>
 
+---
+
 5.  Cantidad de alumnos que reprobaron los exámenes de manejo en el último mes
 
 ```sql
@@ -188,6 +202,8 @@ WHERE e.esta_aprobado = 0 AND
 <div align="center">
     <img src="./imgs/05_resultados.png">
 </div>
+
+---
 
 6.  Disponibilidad de autos la semana próxima (para este ejercicio, se considera que un auto está disponible cuando tiene entre 1 y 10 horas disponibles dentro de la semana)
 
@@ -211,6 +227,8 @@ FROM AUTO a
     <img src="./imgs/06_resultados.png">
 </div>
 
+---
+
 7.  Ingresos en concepto de clases sueltas por sucursal en el último año
 
 ```sql
@@ -225,6 +243,8 @@ WHERE c.esta_pagado = 1 AND
 <div align="center">
     <img src="./imgs/07_resultados.png">
 </div>
+
+---
 
 8.  Reporte de instructores indicando para el último trimestre, la cantidad de clases dadas y puntaje obtenido
 
@@ -257,6 +277,8 @@ ORDER BY 3 desc,4 desc;
     <img src="./imgs/08_resultados.png">
 </div>
 
+---
+
 9.  Reporte de los vehículos indicando patente, titular, kilometraje, y sucursal donde se encuentra
 
 ```sql
@@ -275,6 +297,8 @@ FROM AUTO a
 <div align="center">
     <img src="./imgs/09_resultados.png">
 </div>
+
+---
 
 10. Agenda de clases de la próxima semana con instructor, auto y cliente
 

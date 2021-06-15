@@ -80,21 +80,69 @@ Las operaciones de consulta se encuentran en el siguiente archivo:
 
 - [Autoescuela_Consultas_v2021.06.12.sql](./sql/Autoescuela_Consultas_v2021.06.12.sql)
 
-      1. Dirección de todas las sucursales y nombre y teléfono del supervisor
+1. Dirección de todas las sucursales y nombre y teléfono del supervisor
 
-      ```
-      SELECT
-        s.nombre as Sucursal,
-        s.domicilio as Domicilio,
-        c.nombre as Localidad,
-        concat(e.apellido, ', ', e.nombre) as Supervisor,
-        e.telefono as Telefono
-      FROM SUCURSAL s
-        INNER JOIN CIUDAD c on s.ciudad_id = c.id
-        INNER JOIN EMPLEADO e on s.id = e.sucursal_id
-      WHERE e.es_supervisor = 1;
-      ```
+```sql
+SELECT
+    s.nombre as Sucursal,
+    s.domicilio as Domicilio,
+    c.nombre as Localidad,
+    concat(e.apellido, ', ', e.nombre) as Supervisor,
+    e.telefono as Telefono
+FROM SUCURSAL s
+    INNER JOIN CIUDAD c on s.ciudad_id = c.id
+    INNER JOIN EMPLEADO e on s.id = e.sucursal_id
+WHERE e.es_supervisor = 1;
+```
 
 <div align="center">
-    <img src="./imgs/01_resultados.png" width="500">
+    <img src="./imgs/01_resultados.png">
+</div>
+
+2. Detalle de los instructores cuyo carnet de conducir está próximo a vencerse (para este ejercicio, se toma _"próximo"_ como _"en menos de un año"_)
+
+```sql
+SELECT
+    concat(e.apellido, ', ', e.nombre) as Instructor,
+    e.dni as DNI,
+    e.telefono as Telefono,
+    c.nombre as Cargo,
+    s.nombre as Sucursal,
+    e.fecha_caducidad_carnet as 'Fecha Caducidad Carnet',
+    CASE WHEN e.fecha_caducidad_carnet < CURDATE()
+		THEN 'CADUCADO'
+        ELSE DATEDIFF(DATE_ADD(CURDATE(), INTERVAL 1 YEAR), e.fecha_caducidad_carnet)
+	END as 'Dias hasta caducar'
+FROM EMPLEADO e
+	INNER JOIN CARGO c on e.cargo_id = c.id
+    INNER JOIN SUCURSAL s on e.sucursal_id = s.id
+WHERE c.nombre LIKE '%Instructor%' AND
+	e.fecha_caducidad_carnet <= DATE_ADD(CURDATE(), INTERVAL 1 YEAR);
+```
+
+<div align="center">
+    <img src="./imgs/02_resultados.png">
+</div>
+
+3. Contacto de los alumnos para llamarlos y recordarles el turno de su próxima clase (para este ejercicio, se llamará a los que tengan una clase dentro de los próximos 30 días)
+
+```sql
+SELECT
+	c.nombre as Cliente,
+    c.telefono as Telefono,
+    pc.prox_clase as 'Horario Próxima Clase'
+FROM CLIENTE c
+	INNER JOIN
+		(SELECT s.cliente_id, MIN(cl.horario_inicio) as prox_clase
+		FROM SOLICITUD s
+			INNER JOIN CURSO cu on cu.id = s.curso_id
+			INNER JOIN CLASE cl on cl.curso_id = cu.id
+		WHERE cl.horario_inicio BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 1 MONTH)
+		GROUP BY s.cliente_id
+        ) pc on pc.cliente_id = c.id
+ORDER BY c.id, pc.prox_clase;
+```
+
+<div align="center">
+    <img src="./imgs/03_resultados.png">
 </div>
